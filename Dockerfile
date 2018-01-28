@@ -8,7 +8,7 @@ MAINTAINER Muhammed Iqbal
 RUN powershell -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
 # Copy the contents of websrc folder into the default website folder
-COPY ./websrc c:/inetpub/wwwroot
+COPY ./app c:/inetpub/wwwroot
 
 # Sets a command or process that will run each time a container is run from the new image
 CMD [ "CMD" ]
